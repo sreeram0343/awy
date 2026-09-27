@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: awy_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-awy_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-awy_password}
+      POSTGRES_DB: ${POSTGRES_DB:-awy_db}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-awy_user} -d ${POSTGRES_DB:-awy_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  qdrant:
+    image: qdrant/qdrant:v1.8.4
+    container_name: awy_qdrant
+    restart: always
+    ports:
+      - "${QDRANT_PORT:-6333}:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6333/healthz"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: awy_api
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - POSTGRES_HOST=postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=${POSTGRES_USER:-awy_user}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-awy_password}
+      - POSTGRES_DB=${POSTGRES_DB:-awy_db}
+      - DATABASE_URL=postgresql+asyncpg://${POSTGRES_USER:-awy_user}:${POSTGRES_PASSWORD:-awy_password}@postgres:5432/${POSTGRES_DB:-awy_db}
+      - QDRANT_HOST=qdrant
+      - QDRANT_PORT=6333
+      - ENVIRONMENT=development
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+    command: >
+      sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+
+volumes:
+  postgres_data:
+  qdrant_data:
