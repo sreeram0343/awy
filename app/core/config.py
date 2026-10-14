@@ -29,6 +29,12 @@ class Settings(BaseSettings):
     EMBEDDING_MODEL: str = "sentence-transformers/all-MiniLM-L6-v2"
     EMBEDDING_DIMENSION: int = 384
 
+    # AI and Voice Configuration
+    GEMINI_API_KEY: Optional[str] = None
+    GEMINI_MODEL: str = "gemini-2.0-flash"
+    DEFAULT_LANGUAGE: str = "en"
+    VOICE_SAMPLE_RATE: int = 16000
+
     model_config = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",
