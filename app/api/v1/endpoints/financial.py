@@ -1,77 +1,74 @@
+from typing import Dict, Any
 from fastapi import APIRouter
-from pydantic import BaseModel, Field
 from app.schemas.health import APIEnvelope
+from app.schemas.financial import (
+    OnRoadPriceRequest,
+    InsuranceQuoteRequest,
+    EMIRequest,
+    EMISummary,
+)
+from app.services.financial.on_road_price_engine import on_road_price_engine
+from app.services.financial.insurance_engine import insurance_engine
+from app.services.financial.emi_engine import emi_engine
 
 router = APIRouter()
 
 
-class OnRoadPriceRequest(BaseModel):
-    variant_id: str
-    state_code: str
-    ex_showroom_price: float
-
-
-class OnRoadPriceBreakdown(BaseModel):
-    ex_showroom_price: float
-    rto_tax: float
-    gst_cess: float
-    insurance_premium: float
-    handling_logistics: float
-    on_road_price: float
-    state_code: str
-
-
-class EMIRequest(BaseModel):
-    on_road_price: float
-    down_payment: float
-    tenure_months: int
-    interest_rate_annual: float
-
-
-class EMISummary(BaseModel):
-    loan_amount: float
-    monthly_emi: float
-    total_interest: float
-    total_payment: float
-
-
-@router.post("/on-road-price", response_model=APIEnvelope[OnRoadPriceBreakdown])
+@router.post("/on-road-price", response_model=APIEnvelope[Dict[str, Any]])
 async def calculate_on_road_price(req: OnRoadPriceRequest):
     """
-    Deterministic state-wise on-road price calculation.
+    Deterministic, state-wise, itemized on-road price calculation for 4W and 2W vehicles
+    including RTO road taxes, IRDAI insurance mandates, and incidental charges.
     """
-    # Placeholder stub for Phase 0 - full financial module in Phase 3
-    breakdown = OnRoadPriceBreakdown(
+    result = on_road_price_engine.calculate_on_road_price(
+        state_code=req.state_code,
+        category=req.category,
+        fuel_type=req.fuel_type,
         ex_showroom_price=req.ex_showroom_price,
-        rto_tax=req.ex_showroom_price * 0.12,
-        gst_cess=req.ex_showroom_price * 0.03,
-        insurance_premium=35000.0,
-        handling_logistics=1500.0,
-        on_road_price=req.ex_showroom_price * 1.15 + 36500.0,
-        state_code=req.state_code
+        engine_capacity_cc=req.engine_capacity_cc,
+        motor_power_kw=req.motor_power_kw,
+        length_mm=req.length_mm,
+        ground_clearance_mm=req.ground_clearance_mm,
+        optional_accessories=req.optional_accessories,
+        extended_warranty=req.extended_warranty,
+        zero_dep_insurance=req.zero_dep_insurance,
+        include_fastag=req.include_fastag,
     )
-    return APIEnvelope[OnRoadPriceBreakdown](data=breakdown)
+    return APIEnvelope[Dict[str, Any]](data=result)
+
+
+@router.post("/insurance", response_model=APIEnvelope[Dict[str, Any]])
+async def calculate_insurance(req: InsuranceQuoteRequest):
+    """
+    IRDAI-mandated insurance premium quotation engine (OD + Multi-year TP + Add-ons).
+    """
+    result = insurance_engine.compute_insurance(
+        category=req.category,
+        fuel_type=req.fuel_type,
+        ex_showroom_price=req.ex_showroom_price,
+        engine_capacity_cc=req.engine_capacity_cc,
+        motor_power_kw=req.motor_power_kw,
+        zero_dep=req.zero_dep,
+        engine_protect=req.engine_protect,
+        return_to_invoice=req.return_to_invoice,
+        roadside_assist=req.roadside_assist,
+        cpa_cover=req.cpa_cover,
+    )
+    return APIEnvelope[Dict[str, Any]](data=result)
 
 
 @router.post("/emi", response_model=APIEnvelope[EMISummary])
 async def calculate_emi(req: EMIRequest):
     """
-    Reducing balance EMI calculation engine.
+    Standard reducing-balance vehicle loan EMI calculation with optional
+    full month-by-month amortization schedule.
     """
-    loan_amount = req.on_road_price - req.down_payment
-    monthly_rate = (req.interest_rate_annual / 12) / 100
-    if monthly_rate > 0:
-        emi = loan_amount * monthly_rate * ((1 + monthly_rate) ** req.tenure_months) / (((1 + monthly_rate) ** req.tenure_months) - 1)
-    else:
-        emi = loan_amount / req.tenure_months
-
-    total_payment = emi * req.tenure_months
-    total_interest = total_payment - loan_amount
-
-    summary = EMISummary(
-        loan_amount=round(loan_amount, 2),
-        monthly_emi=round(emi, 2),
-        total_interest=round(total_interest, 2),
-        total_payment=round(total_payment, 2)
+    result = emi_engine.calculate_emi(
+        total_price=req.total_price,
+        down_payment=req.down_payment,
+        down_payment_percent=req.down_payment_percent,
+        tenure_months=req.tenure_months,
+        annual_interest_rate=req.annual_interest_rate,
+        include_schedule=req.include_schedule,
     )
-    return APIEnvelope[EMISummary](data=summary)
+    return APIEnvelope[EMISummary](data=EMISummary.model_validate(result))

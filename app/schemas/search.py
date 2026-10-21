@@ -9,6 +9,7 @@ class FilterConstraint(BaseModel):
     fuel_type: Optional[str] = Field(default=None, description="Petrol, Diesel, EV, CNG")
     abs_type: Optional[str] = Field(default=None, description="Single-Channel, Dual-Channel, etc.")
     min_ncap_rating: Optional[int] = Field(default=None, description="Minimum NCAP rating (e.g. 5)")
+    min_airbags: Optional[int] = Field(default=None, description="Minimum number of airbags (e.g. 6)")
     body_type: Optional[str] = Field(default=None, description="SUV, Cruiser, Hatchback, Scooter, etc.")
 
 

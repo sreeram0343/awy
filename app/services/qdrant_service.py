@@ -1,4 +1,5 @@
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, List
+import os
 from qdrant_client import QdrantClient, AsyncQdrantClient
 from qdrant_client.http import models as rest_models
 from app.core.config import settings
@@ -11,48 +12,68 @@ class QdrantService:
         self.port = settings.QDRANT_PORT
         self.collection_name = settings.QDRANT_COLLECTION_NAME
         self.vector_dim = settings.EMBEDDING_DIMENSION
+        self.local_path = settings.QDRANT_LOCAL_PATH
         self._async_client: Optional[AsyncQdrantClient] = None
         self._sync_client: Optional[QdrantClient] = None
+        self._mode = "remote"  # or "embedded"
 
     def get_sync_client(self) -> QdrantClient:
         if self._sync_client is None:
-            try:
-                self._sync_client = QdrantClient(
-                    host=self.host,
-                    port=self.port,
-                    api_key=settings.QDRANT_API_KEY,
-                    timeout=5.0,
-                )
-            except Exception as e:
-                logger.warning(f"Could not connect to Qdrant at {self.host}:{self.port}, falling back to local storage: {e}")
-                self._sync_client = QdrantClient(path=settings.QDRANT_LOCAL_PATH)
+            if self._mode == "embedded":
+                os.makedirs(self.local_path, exist_ok=True)
+                self._sync_client = QdrantClient(path=self.local_path)
+            else:
+                try:
+                    client = QdrantClient(
+                        host=self.host,
+                        port=self.port,
+                        api_key=settings.QDRANT_API_KEY,
+                        timeout=3.0,
+                    )
+                    # Test connection
+                    client.get_collections()
+                    self._sync_client = client
+                except Exception as e:
+                    logger.warning(f"Could not connect to remote Qdrant at {self.host}:{self.port} ({e}), falling back to embedded local storage at '{self.local_path}'")
+                    self._mode = "embedded"
+                    os.makedirs(self.local_path, exist_ok=True)
+                    self._sync_client = QdrantClient(path=self.local_path)
         return self._sync_client
 
-    def get_async_client(self) -> AsyncQdrantClient:
+    async def get_async_client(self) -> AsyncQdrantClient:
         if self._async_client is None:
-            try:
-                self._async_client = AsyncQdrantClient(
-                    host=self.host,
-                    port=self.port,
-                    api_key=settings.QDRANT_API_KEY,
-                    timeout=5.0,
-                )
-            except Exception as e:
-                logger.warning(f"Could not connect to AsyncQdrant at {self.host}:{self.port}: {e}")
-                self._async_client = AsyncQdrantClient(path=settings.QDRANT_LOCAL_PATH)
+            if self._mode == "embedded":
+                os.makedirs(self.local_path, exist_ok=True)
+                self._async_client = AsyncQdrantClient(path=self.local_path)
+            else:
+                try:
+                    client = AsyncQdrantClient(
+                        host=self.host,
+                        port=self.port,
+                        api_key=settings.QDRANT_API_KEY,
+                        timeout=3.0,
+                    )
+                    await client.get_collections()
+                    self._async_client = client
+                except Exception as e:
+                    logger.warning(f"Could not connect to remote AsyncQdrant at {self.host}:{self.port} ({e}), falling back to embedded local storage at '{self.local_path}'")
+                    self._mode = "embedded"
+                    os.makedirs(self.local_path, exist_ok=True)
+                    self._async_client = AsyncQdrantClient(path=self.local_path)
         return self._async_client
 
     async def check_health(self) -> Dict[str, Any]:
-        """Verify Qdrant server responsiveness and check collection status."""
+        """Verify Qdrant server/storage responsiveness and check collection status."""
         try:
-            client = self.get_async_client()
+            client = await self.get_async_client()
             collections_res = await client.get_collections()
             collections_list = [c.name for c in collections_res.collections]
-            
+
             return {
                 "status": "healthy",
-                "host": self.host,
-                "port": self.port,
+                "mode": self._mode,
+                "host": self.host if self._mode == "remote" else "embedded_local",
+                "port": self.port if self._mode == "remote" else 0,
                 "collections": collections_list,
                 "target_collection": self.collection_name,
                 "collection_exists": self.collection_name in collections_list,
@@ -61,6 +82,7 @@ class QdrantService:
             logger.error(f"Qdrant health check failed: {e}")
             return {
                 "status": "unhealthy",
+                "mode": self._mode,
                 "error": str(e),
                 "host": self.host,
                 "port": self.port,
@@ -69,12 +91,12 @@ class QdrantService:
     async def init_collection(self) -> bool:
         """Create target Qdrant collection if it does not already exist."""
         try:
-            client = self.get_async_client()
+            client = await self.get_async_client()
             collections_res = await client.get_collections()
             existing = [c.name for c in collections_res.collections]
-            
+
             if self.collection_name not in existing:
-                logger.info(f"Creating Qdrant collection '{self.collection_name}' (dim={self.vector_dim})...")
+                logger.info(f"Creating Qdrant collection '{self.collection_name}' (dim={self.vector_dim}, cosine distance)...")
                 await client.create_collection(
                     collection_name=self.collection_name,
                     vectors_config=rest_models.VectorParams(

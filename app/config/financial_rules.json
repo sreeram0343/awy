@@ -1,0 +1,211 @@
+{
+  "version": "v2026.10.1",
+  "effective_date": "2026-04-01",
+  "source": "Ministry of Road Transport and Highways (MoRTH), IRDAI Motor Tariff, and GST Council Schedules",
+  "description": "Standardized Indian automotive tax slabs, GST cess rules, and IRDAI insurance mandates",
+
+  "state_rto_slabs": {
+    "DL": {
+      "state_name": "Delhi",
+      "2W": {
+        "EV": [
+          {"max_price": null, "rate_percent": 0.0, "fixed_fee": 300.0}
+        ],
+        "default": [
+          {"max_price": 100000.0, "rate_percent": 8.0, "fixed_fee": 300.0},
+          {"max_price": null, "rate_percent": 10.0, "fixed_fee": 300.0}
+        ]
+      },
+      "4W": {
+        "EV": [
+          {"max_price": null, "rate_percent": 0.0, "fixed_fee": 1000.0}
+        ],
+        "Diesel": [
+          {"max_price": 600000.0, "rate_percent": 5.0, "fixed_fee": 1000.0},
+          {"max_price": 1000000.0, "rate_percent": 8.75, "fixed_fee": 1000.0},
+          {"max_price": null, "rate_percent": 12.5, "fixed_fee": 1000.0}
+        ],
+        "default": [
+          {"max_price": 600000.0, "rate_percent": 4.0, "fixed_fee": 1000.0},
+          {"max_price": 1000000.0, "rate_percent": 7.0, "fixed_fee": 1000.0},
+          {"max_price": null, "rate_percent": 10.0, "fixed_fee": 1000.0}
+        ]
+      }
+    },
+    "MH": {
+      "state_name": "Maharashtra",
+      "2W": {
+        "EV": [
+          {"max_price": null, "rate_percent": 0.0, "fixed_fee": 500.0}
+        ],
+        "default": [
+          {"max_price": 100000.0, "rate_percent": 10.0, "fixed_fee": 500.0},
+          {"max_price": 300000.0, "rate_percent": 11.0, "fixed_fee": 500.0},
+          {"max_price": null, "rate_percent": 12.0, "fixed_fee": 500.0}
+        ]
+      },
+      "4W": {
+        "EV": [
+          {"max_price": null, "rate_percent": 0.0, "fixed_fee": 1500.0}
+        ],
+        "Diesel": [
+          {"max_price": 1000000.0, "rate_percent": 13.0, "fixed_fee": 1500.0},
+          {"max_price": 2000000.0, "rate_percent": 14.0, "fixed_fee": 1500.0},
+          {"max_price": null, "rate_percent": 15.0, "fixed_fee": 1500.0}
+        ],
+        "default": [
+          {"max_price": 1000000.0, "rate_percent": 11.0, "fixed_fee": 1500.0},
+          {"max_price": 2000000.0, "rate_percent": 12.0, "fixed_fee": 1500.0},
+          {"max_price": null, "rate_percent": 13.0, "fixed_fee": 1500.0}
+        ]
+      }
+    },
+    "KA": {
+      "state_name": "Karnataka",
+      "2W": {
+        "EV": [
+          {"max_price": null, "rate_percent": 4.0, "fixed_fee": 500.0}
+        ],
+        "default": [
+          {"max_price": 50000.0, "rate_percent": 10.0, "fixed_fee": 500.0},
+          {"max_price": 100000.0, "rate_percent": 12.0, "fixed_fee": 500.0},
+          {"max_price": null, "rate_percent": 18.0, "fixed_fee": 500.0}
+        ]
+      },
+      "4W": {
+        "EV": [
+          {"max_price": 2500000.0, "rate_percent": 0.0, "fixed_fee": 1500.0},
+          {"max_price": null, "rate_percent": 4.0, "fixed_fee": 1500.0}
+        ],
+        "Diesel": [
+          {"max_price": 500000.0, "rate_percent": 13.0, "fixed_fee": 1500.0},
+          {"max_price": 1000000.0, "rate_percent": 14.5, "fixed_fee": 1500.0},
+          {"max_price": 2000000.0, "rate_percent": 17.5, "fixed_fee": 1500.0},
+          {"max_price": null, "rate_percent": 18.5, "fixed_fee": 1500.0}
+        ],
+        "default": [
+          {"max_price": 500000.0, "rate_percent": 13.0, "fixed_fee": 1500.0},
+          {"max_price": 1000000.0, "rate_percent": 14.0, "fixed_fee": 1500.0},
+          {"max_price": 2000000.0, "rate_percent": 17.0, "fixed_fee": 1500.0},
+          {"max_price": null, "rate_percent": 18.0, "fixed_fee": 1500.0}
+        ]
+      }
+    },
+    "TN": {
+      "state_name": "Tamil Nadu",
+      "2W": {
+        "EV": [
+          {"max_price": null, "rate_percent": 0.0, "fixed_fee": 500.0}
+        ],
+        "default": [
+          {"max_price": 100000.0, "rate_percent": 8.0, "fixed_fee": 500.0},
+          {"max_price": null, "rate_percent": 12.0, "fixed_fee": 500.0}
+        ]
+      },
+      "4W": {
+        "EV": [
+          {"max_price": null, "rate_percent": 0.0, "fixed_fee": 1000.0}
+        ],
+        "default": [
+          {"max_price": 1000000.0, "rate_percent": 10.0, "fixed_fee": 1000.0},
+          {"max_price": null, "rate_percent": 15.0, "fixed_fee": 1000.0}
+        ]
+      }
+    },
+    "HR": {
+      "state_name": "Haryana",
+      "2W": {
+        "EV": [
+          {"max_price": null, "rate_percent": 0.0, "fixed_fee": 400.0}
+        ],
+        "default": [
+          {"max_price": 100000.0, "rate_percent": 6.0, "fixed_fee": 400.0},
+          {"max_price": 200000.0, "rate_percent": 8.0, "fixed_fee": 400.0},
+          {"max_price": null, "rate_percent": 10.0, "fixed_fee": 400.0}
+        ]
+      },
+      "4W": {
+        "EV": [
+          {"max_price": null, "rate_percent": 0.0, "fixed_fee": 1000.0}
+        ],
+        "default": [
+          {"max_price": 600000.0, "rate_percent": 5.0, "fixed_fee": 1000.0},
+          {"max_price": 1000000.0, "rate_percent": 8.0, "fixed_fee": 1000.0},
+          {"max_price": 2000000.0, "rate_percent": 9.0, "fixed_fee": 1000.0},
+          {"max_price": null, "rate_percent": 10.0, "fixed_fee": 1000.0}
+        ]
+      }
+    }
+  },
+
+  "gst_and_cess_slabs": {
+    "standard_gst_rate": 28.0,
+    "ev_gst_rate": 5.0,
+    "4W_cess": {
+      "sub_4m_petrol_under_1200cc": 1.0,
+      "sub_4m_diesel_under_1500cc": 3.0,
+      "large_petrol": 15.0,
+      "large_diesel": 20.0,
+      "suv_large": 22.0,
+      "ev": 0.0
+    },
+    "2W_cess": {
+      "under_350cc": 0.0,
+      "above_350cc": 3.0,
+      "ev": 0.0
+    }
+  },
+
+  "insurance_rules": {
+    "third_party_mandate_years": {
+      "2W": 5,
+      "4W": 3
+    },
+    "new_vehicle_idv_factor": 0.95,
+    "base_od_rate_percent": {
+      "2W": 1.85,
+      "4W": 2.15
+    },
+    "tp_slabs": {
+      "2W": {
+        "EV": [
+          {"max_kw": 3.0, "premium": 2466.0},
+          {"max_kw": 7.0, "premium": 3273.0},
+          {"max_kw": null, "premium": 6260.0}
+        ],
+        "ICE": [
+          {"max_cc": 75.0, "premium": 2901.0},
+          {"max_cc": 150.0, "premium": 3851.0},
+          {"max_cc": 350.0, "premium": 7365.0},
+          {"max_cc": null, "premium": 15117.0}
+        ]
+      },
+      "4W": {
+        "EV": [
+          {"max_kw": 30.0, "premium": 5543.0},
+          {"max_kw": 65.0, "premium": 9044.0},
+          {"max_kw": null, "premium": 20907.0}
+        ],
+        "ICE": [
+          {"max_cc": 1000.0, "premium": 6286.0},
+          {"max_cc": 1500.0, "premium": 10640.0},
+          {"max_cc": null, "premium": 24596.0}
+        ]
+      }
+    },
+    "pa_cover_driver_annual": 375.0,
+    "add_ons_rates_percent_of_od": {
+      "zero_depreciation": 15.0,
+      "engine_protection": 6.0,
+      "return_to_invoice": 10.0,
+      "roadside_assistance": 3.0
+    },
+    "gst_on_insurance_percent": 18.0
+  },
+
+  "standard_incidental_fees": {
+    "fastag": 500.0,
+    "hsrp_plate": 800.0,
+    "handling_logistics": 1500.0
+  }
+}

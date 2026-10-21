@@ -1,0 +1,1364 @@
+[
+  {
+    "make": "Tata",
+    "model": "Nexon",
+    "category": "4W",
+    "body_type": "SUV",
+    "variants": [
+      {
+        "name": "Creative Plus 1.2 Turbo Petrol MT",
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "engine_capacity_cc": 1199.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 5,
+          "mileage_kpl": 17.44,
+          "ev_range_km": null,
+          "ncap_rating": 5,
+          "airbags_count": 6,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 208.0,
+          "length_mm": 3995.0,
+          "width_mm": 1804.0,
+          "height_mm": 1620.0,
+          "wheelbase_mm": 2498.0,
+          "boot_space_litres": 382.0,
+          "extra_features": {
+            "sunroof": true,
+            "adas": false,
+            "touchscreen_inches": 10.25,
+            "digital_cluster": true,
+            "connected_car_tech": true,
+            "cruise_control": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 1100000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 1115000.0, "effective_date": "2026-01-01"},
+          {"state_code": "KA", "ex_showroom_price": 1120000.0, "effective_date": "2026-01-01"},
+          {"state_code": "TN", "ex_showroom_price": 1110000.0, "effective_date": "2026-01-01"}
+        ]
+      },
+      {
+        "name": "Fearless Plus Long Range EV",
+        "fuel_type": "EV",
+        "transmission": "Single-Speed",
+        "engine_capacity_cc": null,
+        "motor_power_kw": 106.4,
+        "battery_capacity_kwh": 40.5,
+        "spec": {
+          "seating_capacity": 5,
+          "mileage_kpl": null,
+          "ev_range_km": 465.0,
+          "ncap_rating": 5,
+          "airbags_count": 6,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 190.0,
+          "length_mm": 3994.0,
+          "width_mm": 1811.0,
+          "height_mm": 1616.0,
+          "wheelbase_mm": 2498.0,
+          "boot_space_litres": 350.0,
+          "extra_features": {
+            "sunroof": true,
+            "v2v_charging": true,
+            "v2l_charging": true,
+            "fast_charging_kw": 50.0,
+            "touchscreen_inches": 12.3
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 1699000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 1715000.0, "effective_date": "2026-01-01"},
+          {"state_code": "KA", "ex_showroom_price": 1729000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The 1.2L turbocharged Revotron engine pulls cleanly in City and Sport modes with minimal lag once past 1,800 rpm. High-speed highway tracking at 120 km/h feels planted and confidence-inspiring due to the stiffened monocoque chassis.",
+        "source": "Autocar India Road Test",
+        "rating": 4.5
+      },
+      {
+        "topic": "comfort",
+        "content": "Ride quality over potholed urban stretches is exemplary with 208 mm ground clearance handling speed breakers effortlessly. Rear bench accommodates three adults reasonably well, though the sloping roofline marginally limits tall occupants headroom.",
+        "source": "ZigWheels Long-Term Review",
+        "rating": 4.2
+      },
+      {
+        "topic": "reliability",
+        "content": "5-star Bharat NCAP rating confirmed in real world crash survivability. Occasional software glitches on the 10.25-inch infotainment screen require OTA updates, but mechanical robustness and suspension durability have been rock solid after 30,000 km.",
+        "source": "Team-BHP Owner Report",
+        "rating": 4.0
+      },
+      {
+        "topic": "service_cost",
+        "content": "Scheduled annual service bills average between ₹6,500 and ₹8,200 including synthetic oil changes and consumables. Spare parts availability is widespread across Tier-1 and Tier-2 Indian cities.",
+        "source": "Overdrive Ownership Survey",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "make": "Hyundai",
+    "model": "Creta",
+    "category": "4W",
+    "body_type": "SUV",
+    "variants": [
+      {
+        "name": "SX (O) 1.5 Turbo DCT",
+        "fuel_type": "Petrol",
+        "transmission": "Automatic",
+        "engine_capacity_cc": 1482.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 5,
+          "mileage_kpl": 18.4,
+          "ev_range_km": null,
+          "ncap_rating": 4,
+          "airbags_count": 6,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 190.0,
+          "length_mm": 4330.0,
+          "width_mm": 1790.0,
+          "height_mm": 1635.0,
+          "wheelbase_mm": 2610.0,
+          "boot_space_litres": 433.0,
+          "extra_features": {
+            "panoramic_sunroof": true,
+            "adas_level_2": true,
+            "ventilated_seats": true,
+            "bose_sound_system": true,
+            "blind_view_monitor": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 2000000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 2025000.0, "effective_date": "2026-01-01"},
+          {"state_code": "KA", "ex_showroom_price": 2040000.0, "effective_date": "2026-01-01"},
+          {"state_code": "TN", "ex_showroom_price": 2015000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The 1.5-litre Turbo GDi petrol producing 160 PS paired with the 7-speed dual clutch transmission delivers blistering 0-100 km/h acceleration in under 9 seconds. Gear shifts are lightning fast with zero shift shock during aggressive overtaking maneuvers.",
+        "source": "MotorBeam Review",
+        "rating": 4.7
+      },
+      {
+        "topic": "comfort",
+        "content": "Cabin insulation and NVH levels are best in class. Front ventilated seats and the panoramic glass roof elevate luxury feel. Ride quality is supple, soaking up small road imperfections smoothly.",
+        "source": "Autocar India Long-Term",
+        "rating": 4.8
+      },
+      {
+        "topic": "reliability",
+        "content": "Hyundai electronics and Level 2 ADAS calibrations are mature and dependable in chaotic Indian traffic. The DCT transmission runs cool in bumper-to-bumper traffic without overheating warnings reported on older generations.",
+        "source": "Team-BHP User Reviews",
+        "rating": 4.4
+      },
+      {
+        "topic": "service_cost",
+        "content": "Dealership service network is top tier with transparent menu pricing. Standard minor service ranges from ₹4,500 to ₹6,000, while major 40,000 km service is around ₹11,000.",
+        "source": "CarDekho Cost Calculator",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "make": "Mahindra",
+    "model": "Scorpio-N",
+    "category": "4W",
+    "body_type": "SUV",
+    "variants": [
+      {
+        "name": "Z8 L 2.2 Diesel 4WD AT",
+        "fuel_type": "Diesel",
+        "transmission": "Automatic",
+        "engine_capacity_cc": 2184.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 7,
+          "mileage_kpl": 14.8,
+          "ev_range_km": null,
+          "ncap_rating": 5,
+          "airbags_count": 6,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 187.0,
+          "length_mm": 4662.0,
+          "width_mm": 1917.0,
+          "height_mm": 1857.0,
+          "wheelbase_mm": 2750.0,
+          "boot_space_litres": 460.0,
+          "extra_features": {
+            "four_wheel_drive": true,
+            "terrain_modes": true,
+            "sony_3d_audio": true,
+            "sunroof": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 2450000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 2480000.0, "effective_date": "2026-01-01"},
+          {"state_code": "KA", "ex_showroom_price": 2510000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The 2.2L mHawk diesel delivers 175 PS and 400 Nm of torque. The low-end torque allows effortless hill climbs and severe off-road obstacle traversal using the mechanical locking rear differential and 4Xplor terrain modes.",
+        "source": "Evo India Off-Road Trial",
+        "rating": 4.8
+      },
+      {
+        "topic": "comfort",
+        "content": "Frequency Dependent Damping suspension delivers pliant ride over broken roads. Commanding high driving stance gives unmatched road visibility, although vertical body bounce is noticeable on undulating highways.",
+        "source": "Autocar India",
+        "rating": 4.3
+      },
+      {
+        "topic": "reliability",
+        "content": "Body-on-frame ladder frame build shrugs off abusive rural roads without squeaks. Mechanical components are extremely durable; occasional sensor glitches on the tire pressure monitoring system are quickly resolved by updates.",
+        "source": "Team-BHP Reliability Index",
+        "rating": 4.5
+      },
+      {
+        "topic": "service_cost",
+        "content": "Mahindra diesel maintenance costs are moderate, averaging around ₹9,000 annually. Heavy components like brake pads and suspension bushes are priced competitively.",
+        "source": "GaadiWaadi Ownership Review",
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "make": "Mahindra",
+    "model": "XUV700",
+    "category": "4W",
+    "body_type": "SUV",
+    "variants": [
+      {
+        "name": "AX7 L 2.0 Petrol AT",
+        "fuel_type": "Petrol",
+        "transmission": "Automatic",
+        "engine_capacity_cc": 1997.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 7,
+          "mileage_kpl": 12.5,
+          "ev_range_km": null,
+          "ncap_rating": 5,
+          "airbags_count": 7,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 200.0,
+          "length_mm": 4695.0,
+          "width_mm": 1890.0,
+          "height_mm": 1755.0,
+          "wheelbase_mm": 2750.0,
+          "boot_space_litres": 240.0,
+          "extra_features": {
+            "panoramic_sunroof": true,
+            "adas_level_2": true,
+            "sony_12_speaker_sound": true,
+            "dual_10_25_inch_screens": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 2399000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 2420000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The 2.0L mStallion turbo petrol engine pushes out an intoxicating 200 PS. High-speed highway cruising is effortless with rapid overtakes, though heavy city driving pulls mileage down to 8.5-9.5 kmpl.",
+        "source": "Overdrive Performance Test",
+        "rating": 4.6
+      },
+      {
+        "topic": "comfort",
+        "content": "Outstanding seat contouring, supportive lumbar adjustment, and whisper-quiet cabin insulation. The panoramic skyroof is massive and the second row offers generous legroom.",
+        "source": "ZigWheels Review",
+        "rating": 4.7
+      },
+      {
+        "topic": "reliability",
+        "content": "5-star Global NCAP rating provides immense peace of mind. Early software gremlins on the twin screen setup have been addressed with recent software releases.",
+        "source": "Team-BHP Long-Term Test",
+        "rating": 4.3
+      },
+      {
+        "topic": "service_cost",
+        "content": "Average periodic service cost is approximately ₹8,500 to ₹10,000 per 10,000 km interval. Mahindra customer care is responsive.",
+        "source": "CarWale Review",
+        "rating": 4.1
+      }
+    ]
+  },
+  {
+    "make": "Maruti Suzuki",
+    "model": "Brezza",
+    "category": "4W",
+    "body_type": "SUV",
+    "variants": [
+      {
+        "name": "ZXi Plus 1.5 Petrol AT",
+        "fuel_type": "Petrol",
+        "transmission": "Automatic",
+        "engine_capacity_cc": 1462.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 5,
+          "mileage_kpl": 19.8,
+          "ev_range_km": null,
+          "ncap_rating": 4,
+          "airbags_count": 6,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 200.0,
+          "length_mm": 3995.0,
+          "width_mm": 1790.0,
+          "height_mm": 1685.0,
+          "wheelbase_mm": 2500.0,
+          "boot_space_litres": 328.0,
+          "extra_features": {
+            "head_up_display": true,
+            "360_degree_camera": true,
+            "sunroof": true,
+            "smartplay_pro_plus": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 1398000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 1410000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The 1.5L naturally aspirated K15C engine with smart hybrid technology prioritizes linear progress and fuel economy over outright speed. The 6-speed torque converter is smooth in stop-and-go commuting.",
+        "source": "Autocar India",
+        "rating": 4.1
+      },
+      {
+        "topic": "comfort",
+        "content": "Upright seating position with wide seats makes city driving stress-free. Suspension absorbs bad road patches without bottoming out.",
+        "source": "CarDekho Long-Term",
+        "rating": 4.4
+      },
+      {
+        "topic": "reliability",
+        "content": "Zero mechanical problems reported across 50,000 km long-term ownership tests. Built on Suzuki Global C platform with proven structural integrity and robust electricals.",
+        "source": "Team-BHP Long-Term Test",
+        "rating": 4.9
+      },
+      {
+        "topic": "service_cost",
+        "content": "Maruti Suzuki boasts the lowest maintenance costs in India. Standard service costs roughly ₹4,000 to ₹5,200 annually, with spare parts available in virtually every corner of India.",
+        "source": "ZigWheels Service Check",
+        "rating": 5.0
+      }
+    ]
+  },
+  {
+    "make": "Maruti Suzuki",
+    "model": "Swift",
+    "category": "4W",
+    "body_type": "Hatchback",
+    "variants": [
+      {
+        "name": "ZXi Plus 1.2 Petrol AMT",
+        "fuel_type": "Petrol",
+        "transmission": "AMT",
+        "engine_capacity_cc": 1197.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 5,
+          "mileage_kpl": 25.75,
+          "ev_range_km": null,
+          "ncap_rating": 3,
+          "airbags_count": 6,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 163.0,
+          "length_mm": 3860.0,
+          "width_mm": 1735.0,
+          "height_mm": 1520.0,
+          "wheelbase_mm": 2450.0,
+          "boot_space_litres": 265.0,
+          "extra_features": {
+            "touchscreen_inches": 9.0,
+            "wireless_charging": true,
+            "led_projector_headlamps": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 950000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 965000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The new 3-cylinder Z-series engine delivers astonishing fuel efficiency returning over 24 kmpl on highways. Low-end torque is tuned for instant stoplight response in choked city traffic.",
+        "source": "Autocar India First Drive",
+        "rating": 4.3
+      },
+      {
+        "topic": "comfort",
+        "content": "Compact footprint allows darting through narrow lanes and effortless parallel parking. Rear passenger space is adequate for city commutes.",
+        "source": "Overdrive City Test",
+        "rating": 4.1
+      },
+      {
+        "topic": "reliability",
+        "content": "Engine components, cooling system, and electrical harness demonstrate legendary Maruti durability. 6 airbags now standard across all trims significantly improves passive safety.",
+        "source": "Team-BHP Review",
+        "rating": 4.7
+      },
+      {
+        "topic": "service_cost",
+        "content": "Routine service expenses are minuscule at approximately ₹3,200 to ₹4,500 per annum. High resale value in the used vehicle market.",
+        "source": "CarWale Buyer Guide",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "make": "Tata",
+    "model": "Punch",
+    "category": "4W",
+    "body_type": "Micro SUV",
+    "variants": [
+      {
+        "name": "Accomplished Dazzle 1.2 Petrol MT",
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "engine_capacity_cc": 1199.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 5,
+          "mileage_kpl": 20.09,
+          "ev_range_km": null,
+          "ncap_rating": 5,
+          "airbags_count": 2,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 187.0,
+          "length_mm": 3827.0,
+          "width_mm": 1742.0,
+          "height_mm": 1615.0,
+          "wheelbase_mm": 2445.0,
+          "boot_space_litres": 366.0,
+          "extra_features": {
+            "90_degree_doors": true,
+            "harman_audio": true,
+            "rain_sensing_wipers": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 825000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 835000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "1.2L Revotron 3-cylinder engine offers predictable power delivery suited for calm city cruising. Overtaking on single-lane state highways requires planned downshifts.",
+        "source": "ZigWheels Road Test",
+        "rating": 3.9
+      },
+      {
+        "topic": "comfort",
+        "content": "Wide 90-degree opening doors provide unmatched ingress and egress ease for elderly passengers. Ride comfort over potholes punches above its weight class.",
+        "source": "Autocar India",
+        "rating": 4.5
+      },
+      {
+        "topic": "reliability",
+        "content": "Full 5-star Global NCAP score with rigid ALFA architecture gives high structural safety. Mechanical components hold up firmly under rigorous city usage.",
+        "source": "Team-BHP Safety Report",
+        "rating": 4.6
+      },
+      {
+        "topic": "service_cost",
+        "content": "Scheduled maintenance averages ₹5,000 per year. Parts are shared with Altroz and Tiago, keeping component replacement costs economical.",
+        "source": "CarDekho Service Report",
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "make": "Hyundai",
+    "model": "i20",
+    "category": "4W",
+    "body_type": "Hatchback",
+    "variants": [
+      {
+        "name": "Asta (O) 1.2 Kappa IVT",
+        "fuel_type": "Petrol",
+        "transmission": "Automatic",
+        "engine_capacity_cc": 1197.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 5,
+          "mileage_kpl": 19.65,
+          "ev_range_km": null,
+          "ncap_rating": 3,
+          "airbags_count": 6,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 170.0,
+          "length_mm": 3995.0,
+          "width_mm": 1775.0,
+          "height_mm": 1505.0,
+          "wheelbase_mm": 2580.0,
+          "boot_space_litres": 311.0,
+          "extra_features": {
+            "sunroof": true,
+            "bose_speakers": true,
+            "wireless_android_auto": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 1020000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 1035000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The 1.2L 4-cylinder Kappa engine coupled with the intelligent variable transmission (IVT) offers buttery smooth power progression with zero jerkiness in bumper-to-bumper traffic.",
+        "source": "MotorBeam Review",
+        "rating": 4.2
+      },
+      {
+        "topic": "comfort",
+        "content": "One of the roomiest rear benches in the premium hatchback class with dedicated rear AC vents and USB charging ports. Sound deadening shields the cabin effectively.",
+        "source": "Autocar India Long-Term",
+        "rating": 4.6
+      },
+      {
+        "topic": "reliability",
+        "content": "Fit and finish across dashboard panels is exemplary. Electronics and steering feedback remain consistent over extended usage without rattles.",
+        "source": "Team-BHP Review",
+        "rating": 4.5
+      },
+      {
+        "topic": "service_cost",
+        "content": "Standard periodic maintenance cost is ₹4,800 to ₹6,200 annually. Warranty packages up to 5 years provide comprehensive protection.",
+        "source": "ZigWheels Review",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "make": "Honda",
+    "model": "City",
+    "category": "4W",
+    "body_type": "Sedan",
+    "variants": [
+      {
+        "name": "ZX 1.5 i-VTEC CVT",
+        "fuel_type": "Petrol",
+        "transmission": "Automatic",
+        "engine_capacity_cc": 1498.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 5,
+          "mileage_kpl": 18.4,
+          "ev_range_km": null,
+          "ncap_rating": 5,
+          "airbags_count": 6,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 165.0,
+          "length_mm": 4583.0,
+          "width_mm": 1748.0,
+          "height_mm": 1489.0,
+          "wheelbase_mm": 2600.0,
+          "boot_space_litres": 506.0,
+          "extra_features": {
+            "honda_sensing_adas": true,
+            "lane_watch_camera": true,
+            "electric_sunroof": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 1630000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 1655000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The legendary 1.5L naturally aspirated DOHC i-VTEC revs eagerly all the way to 7,000 rpm with a sweet mechanical exhaust tone. High-speed highway stability is solid.",
+        "source": "Overdrive Review",
+        "rating": 4.7
+      },
+      {
+        "topic": "comfort",
+        "content": "The gold standard for rear-seat lounge comfort in executive sedans. Plush seat cushioning and generous 506-litre cavernous boot accommodate extensive family road-trip luggage.",
+        "source": "Autocar India",
+        "rating": 4.9
+      },
+      {
+        "topic": "reliability",
+        "content": "Honda engine longevity is bulletproof; engines frequently cross 2,00,000 km without requiring overhaul. Paint quality and rust-proofing are well proven.",
+        "source": "Team-BHP Long-Term Report",
+        "rating": 4.8
+      },
+      {
+        "topic": "service_cost",
+        "content": "Periodic servicing runs between ₹5,500 and ₹7,500 per service. Low frequency of unplanned component failures keeps total cost of ownership very low.",
+        "source": "CarDekho Review",
+        "rating": 4.6
+      }
+    ]
+  },
+  {
+    "make": "MG",
+    "model": "Windsor EV",
+    "category": "4W",
+    "body_type": "CUV",
+    "variants": [
+      {
+        "name": "Essence 38kWh",
+        "fuel_type": "EV",
+        "transmission": "Single-Speed",
+        "engine_capacity_cc": null,
+        "motor_power_kw": 100.0,
+        "battery_capacity_kwh": 38.0,
+        "spec": {
+          "seating_capacity": 5,
+          "mileage_kpl": null,
+          "ev_range_km": 331.0,
+          "ncap_rating": 4,
+          "airbags_count": 6,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 186.0,
+          "length_mm": 4295.0,
+          "width_mm": 1850.0,
+          "height_mm": 1677.0,
+          "wheelbase_mm": 2700.0,
+          "boot_space_litres": 604.0,
+          "extra_features": {
+            "aerolounge_seats_135_degrees": true,
+            "infinity_glass_roof": true,
+            "15_6_inch_grandview_display": true,
+            "baas_battery_subscription_available": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 1549000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 1565000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The permanent magnet synchronous motor produces instantaneous 200 Nm torque, launching from 0-60 km/h with whisper-quiet responsiveness. Regenerative braking tuning is intuitive.",
+        "source": "Autocar India EV Test",
+        "rating": 4.4
+      },
+      {
+        "topic": "comfort",
+        "content": "Aero Lounge rear seats recline up to 135 degrees mimicking business class aircraft seating. Enormous 2700 mm wheelbase provides limousine-grade legroom in a compact crossover footprint.",
+        "source": "ZigWheels Review",
+        "rating": 4.9
+      },
+      {
+        "topic": "reliability",
+        "content": "Prismatic LFP battery cells boast lifetime battery warranty for the first owner. Thermal management in scorching 45°C Indian summers operates without thermal throttling.",
+        "source": "EV Mechanica Report",
+        "rating": 4.4
+      },
+      {
+        "topic": "service_cost",
+        "content": "Running cost is under ₹1.2 per km when charged at home. EV mechanical simplicity reduces annual service cost to less than ₹3,000 for brake checks and cabin filter replacements.",
+        "source": "Team-BHP EV Ownership",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "make": "Tata",
+    "model": "Tiago EV",
+    "category": "4W",
+    "body_type": "Hatchback",
+    "variants": [
+      {
+        "name": "XZ Plus Tech LUX 24kWh",
+        "fuel_type": "EV",
+        "transmission": "Single-Speed",
+        "engine_capacity_cc": null,
+        "motor_power_kw": 55.0,
+        "battery_capacity_kwh": 24.0,
+        "spec": {
+          "seating_capacity": 5,
+          "mileage_kpl": null,
+          "ev_range_km": 315.0,
+          "ncap_rating": 4,
+          "airbags_count": 2,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 165.0,
+          "length_mm": 3769.0,
+          "width_mm": 1677.0,
+          "height_mm": 1536.0,
+          "wheelbase_mm": 2400.0,
+          "boot_space_litres": 240.0,
+          "extra_features": {
+            "fast_charging_support": true,
+            "connected_car_zconnect": true,
+            "multi_mode_regen": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 999000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 1015000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "Zippy 0-50 km/h sprint makes city roundabouts and traffic gaps effortless to navigate. Sport mode injects surprising enthusiasm into a budget city runabout.",
+        "source": "Autocar India",
+        "rating": 4.3
+      },
+      {
+        "topic": "comfort",
+        "content": "Absence of engine vibration makes daily rush-hour commuting relaxing. Air conditioning with automatic climate control cools the small cabin rapidly.",
+        "source": "Team-BHP User Reviews",
+        "rating": 4.2
+      },
+      {
+        "topic": "reliability",
+        "content": "IP67 rated battery pack has proven reliable through monsoon waterlogged roads in Mumbai and Delhi. 8-year / 1,60,000 km battery warranty provides confidence.",
+        "source": "Overdrive EV Check",
+        "rating": 4.3
+      },
+      {
+        "topic": "service_cost",
+        "content": "Negligible operational costs with periodic checkups costing approximately ₹2,500 every 15,000 km.",
+        "source": "CarWale Ownership Report",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "make": "Toyota",
+    "model": "Innova Hycross",
+    "category": "4W",
+    "body_type": "MPV",
+    "variants": [
+      {
+        "name": "ZX (O) 2.0 Strong Hybrid e-CVT",
+        "fuel_type": "Hybrid",
+        "transmission": "Automatic",
+        "engine_capacity_cc": 1987.0,
+        "motor_power_kw": 83.0,
+        "battery_capacity_kwh": 1.6,
+        "spec": {
+          "seating_capacity": 7,
+          "mileage_kpl": 21.1,
+          "ev_range_km": null,
+          "ncap_rating": 5,
+          "airbags_count": 6,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 185.0,
+          "length_mm": 4755.0,
+          "width_mm": 1850.0,
+          "height_mm": 1795.0,
+          "wheelbase_mm": 2850.0,
+          "boot_space_litres": 300.0,
+          "extra_features": {
+            "ottoman_captain_seats": true,
+            "panoramic_sunroof": true,
+            "toyota_safety_sense_adas": true,
+            "ev_drive_mode": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 3098000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 3130000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The strong hybrid powertrain seamlessly blends the 2.0L Atkinson cycle petrol engine with the electric motor. Combined 186 PS moves this 7-seater briskly while returning over 20 kmpl in dense urban traffic.",
+        "source": "Autocar India Long-Term",
+        "rating": 4.8
+      },
+      {
+        "topic": "comfort",
+        "content": "Middle row ottoman captain seats with powered leg rests offer intercity luxury that rivals German executive coaches. The TNGA monocoque chassis eliminates body roll found in ladder-frame predecessors.",
+        "source": "Overdrive Review",
+        "rating": 5.0
+      },
+      {
+        "topic": "reliability",
+        "content": "Legendary Toyota build and engineering. Hybrid self-charging nickel-metal hydride battery requires zero external intervention and operates trouble-free over lakhs of kilometers.",
+        "source": "Team-BHP Fleet Survey",
+        "rating": 5.0
+      },
+      {
+        "topic": "service_cost",
+        "content": "Toyota's standardized maintenance menu and durable brake energy recuperation (which extends brake pad life) keep annual maintenance bills around ₹7,000 to ₹9,000.",
+        "source": "CarDekho Long-Term Report",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "make": "Royal Enfield",
+    "model": "Classic 350",
+    "category": "2W",
+    "body_type": "Cruiser",
+    "variants": [
+      {
+        "name": "Dark Stealth Black Dual Channel",
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "engine_capacity_cc": 349.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 2,
+          "mileage_kpl": 36.2,
+          "ev_range_km": null,
+          "ncap_rating": null,
+          "airbags_count": 0,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 170.0,
+          "length_mm": 2145.0,
+          "width_mm": 785.0,
+          "height_mm": 1090.0,
+          "wheelbase_mm": 1390.0,
+          "boot_space_litres": null,
+          "extra_features": {
+            "alloy_wheels": true,
+            "tubeless_tyres": true,
+            "tripper_navigation": true,
+            "usb_charging_port": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 225000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 228000.0, "effective_date": "2026-01-01"},
+          {"state_code": "KA", "ex_showroom_price": 231000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The counterbalanced J-series 349cc engine produces 20.2 bhp and 27 Nm of low-end torque. Gone are the bone-jarring vibrations of the old UCE motor; cruising at 90 km/h is silky smooth with trademark thump intact.",
+        "source": "Autocar India Bike Test",
+        "rating": 4.6
+      },
+      {
+        "topic": "comfort",
+        "content": "Upright relaxed cruiser ergonomics with thickly padded sprung saddle. Absorbs highway bridge joints and broken village tarmac with commanding stability.",
+        "source": "BikeWale Long-Term Report",
+        "rating": 4.7
+      },
+      {
+        "topic": "reliability",
+        "content": "J-platform exhibits quantum leap in electrical switchgear reliability, oil leak prevention, and paint finish. Dual-channel ABS with ByBre calipers delivers secure wet braking.",
+        "source": "Team-BHP Motorcycle Review",
+        "rating": 4.5
+      },
+      {
+        "topic": "service_cost",
+        "content": "Extensive authorized service footprint across national highways. Standard paid service costs ₹1,800 to ₹2,500 including semi-synthetic engine oil.",
+        "source": "ZigWheels Ownership Review",
+        "rating": 4.4
+      }
+    ]
+  },
+  {
+    "make": "Royal Enfield",
+    "model": "Hunter 350",
+    "category": "2W",
+    "body_type": "Roadster",
+    "variants": [
+      {
+        "name": "Metro Dapper Dual Channel",
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "engine_capacity_cc": 349.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 2,
+          "mileage_kpl": 36.0,
+          "ev_range_km": null,
+          "ncap_rating": null,
+          "airbags_count": 0,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 150.0,
+          "length_mm": 2055.0,
+          "width_mm": 800.0,
+          "height_mm": 1055.0,
+          "wheelbase_mm": 1370.0,
+          "boot_space_litres": null,
+          "extra_features": {
+            "cast_alloy_wheels": true,
+            "tubeless_tyres": true,
+            "digital_analogue_instrument_cluster": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 169000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 172000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "Weighing 14 kg less than the Classic 350 with sharper rake and 17-inch alloy wheels, the Hunter darts through heavy city traffic with nimble, responsive agility.",
+        "source": "Overdrive Street Test",
+        "rating": 4.5
+      },
+      {
+        "topic": "comfort",
+        "content": "Slightly firm rear suspension setup prioritizes cornering balance over plushness. Low 790 mm seat height makes it very accessible to shorter riders.",
+        "source": "BikeDekho Review",
+        "rating": 4.1
+      },
+      {
+        "topic": "reliability",
+        "content": "Smooth refined J-series architecture with durable switchgear and zero oil seepage noted over 20,000 km test cycles.",
+        "source": "Team-BHP Two-Wheeler Forum",
+        "rating": 4.6
+      },
+      {
+        "topic": "service_cost",
+        "content": "Affordable maintenance at approximately ₹1,600 to ₹2,200 per service. Spares are widely shared across the 350cc Royal Enfield family.",
+        "source": "BikeWale Maintenance Tracker",
+        "rating": 4.5
+      }
+    ]
+  },
+  {
+    "make": "Yamaha",
+    "model": "MT-15 V2",
+    "category": "2W",
+    "body_type": "Naked Streetfighter",
+    "variants": [
+      {
+        "name": "Deluxe Dual Channel ABS",
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "engine_capacity_cc": 155.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 2,
+          "mileage_kpl": 52.0,
+          "ev_range_km": null,
+          "ncap_rating": null,
+          "airbags_count": 0,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 170.0,
+          "length_mm": 2015.0,
+          "width_mm": 800.0,
+          "height_mm": 1070.0,
+          "wheelbase_mm": 1325.0,
+          "boot_space_litres": null,
+          "extra_features": {
+            "usd_front_forks": true,
+            "assist_and_slipper_clutch": true,
+            "variable_valve_actuation": true,
+            "traction_control_system": true,
+            "bluetooth_y_connect": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 173000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 175000.0, "effective_date": "2026-01-01"},
+          {"state_code": "KA", "ex_showroom_price": 177000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The 155cc liquid-cooled 4-valve engine with Variable Valve Actuation (VVA) screams cleanly to 10,000 rpm while producing 18.4 PS. The assist & slipper clutch allows aggressive clutchless-style downshifts without rear wheel hop.",
+        "source": "Autocar India Track and Street",
+        "rating": 4.9
+      },
+      {
+        "topic": "comfort",
+        "content": "Golden inverted front forks and lightweight deltabox chassis give razor-sharp corner carving. The pillion seat is narrow and compact, best reserved for quick city hops.",
+        "source": "ZigWheels Motorcycle Test",
+        "rating": 3.9
+      },
+      {
+        "topic": "reliability",
+        "content": "Yamaha Japanese engineering excellence. Liquid cooling system prevents power drop during intense heatwaves. Traction control and dual-channel ABS work reliably on wet cobblestones.",
+        "source": "Team-BHP Motorcycle Review",
+        "rating": 4.8
+      },
+      {
+        "topic": "service_cost",
+        "content": "Fuel economy is phenomenal at over 50 kmpl under mixed riding. Routine service costs around ₹1,400 to ₹1,900 with high component longevity.",
+        "source": "BikeWale Cost Index",
+        "rating": 4.7
+      }
+    ]
+  },
+  {
+    "make": "KTM",
+    "model": "390 Duke",
+    "category": "2W",
+    "body_type": "Naked Streetfighter",
+    "variants": [
+      {
+        "name": "Standard Gen 3 Cornering ABS",
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "engine_capacity_cc": 399.0,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 2,
+          "mileage_kpl": 28.5,
+          "ev_range_km": null,
+          "ncap_rating": null,
+          "airbags_count": 0,
+          "abs_type": "Cornering ABS",
+          "ground_clearance_mm": 151.0,
+          "length_mm": 2072.0,
+          "width_mm": 831.0,
+          "height_mm": 1109.0,
+          "wheelbase_mm": 1357.0,
+          "boot_space_litres": null,
+          "extra_features": {
+            "cornering_abs_and_mTC": true,
+            "quickshifter_plus_bi_directional": true,
+            "launch_control": true,
+            "adjustable_wp_apex_suspension": true,
+            "5_inch_tft_display": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 313000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 317000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The new 399cc LC4c engine unleashes 46 PS and 39 Nm torque. Power delivery is ferocious with bi-directional Quickshifter+ popping upshifts under full throttle. Cornering ABS and launch control provide race-bike electronics.",
+        "source": "Fast Bikes India",
+        "rating": 5.0
+      },
+      {
+        "topic": "comfort",
+        "content": "Adjustable WP Apex compression and rebound damping allows softening suspension for city commuting or stiffening for track days. Ergonomics are committed and sporty.",
+        "source": "Autocar India",
+        "rating": 4.1
+      },
+      {
+        "topic": "reliability",
+        "content": "Curved radiator and dual cooling fans solve earlier generation thermal throttling in Indian traffic. Chassis welds and TFT electronics are high quality.",
+        "source": "Team-BHP Bike Review",
+        "rating": 4.3
+      },
+      {
+        "topic": "service_cost",
+        "content": "Performance bike maintenance costs are reasonable at ₹3,000 to ₹4,200 per service. Premium fuel and high tire wear increase operational cost compared to commuter bikes.",
+        "source": "BikeDekho Long-Term Report",
+        "rating": 4.0
+      }
+    ]
+  },
+  {
+    "make": "TVS",
+    "model": "Apache RTR 160 4V",
+    "category": "2W",
+    "body_type": "Sports Commuter",
+    "variants": [
+      {
+        "name": "Special Edition Dual Channel ABS",
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "engine_capacity_cc": 159.7,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 2,
+          "mileage_kpl": 47.5,
+          "ev_range_km": null,
+          "ncap_rating": null,
+          "airbags_count": 0,
+          "abs_type": "Dual-Channel",
+          "ground_clearance_mm": 180.0,
+          "length_mm": 2035.0,
+          "width_mm": 790.0,
+          "height_mm": 1050.0,
+          "wheelbase_mm": 1357.0,
+          "boot_space_litres": null,
+          "extra_features": {
+            "ride_modes_urban_rain_sport": true,
+            "smartxonnect_bluetooth": true,
+            "glide_through_technology": true,
+            "radial_rear_tyre": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 132000.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 134000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The oil-cooled 4-valve engine pushes out 17.55 PS in Sport mode with a raspy exhaust note. Glide Through Technology (GTT) allows creeping in traffic without touching the throttle.",
+        "source": "BikeWale Review",
+        "rating": 4.6
+      },
+      {
+        "topic": "comfort",
+        "content": "Single-piece contoured seat offers exceptional comfort for rider and pillion during daily office commutes. Showa-tuned monoshock absorbs speed bumps softly.",
+        "source": "ZigWheels Road Test",
+        "rating": 4.6
+      },
+      {
+        "topic": "reliability",
+        "content": "Oil-cooling system ensures consistent performance in stop-and-go heat. TVS Racing lineage provides strong engine reliability and chassis durability.",
+        "source": "Team-BHP Review",
+        "rating": 4.5
+      },
+      {
+        "topic": "service_cost",
+        "content": "Routine maintenance bills are very economical at ₹1,100 to ₹1,600 per service. TVS parts are widely available at affordable prices.",
+        "source": "CarDekho Bike Guide",
+        "rating": 4.8
+      }
+    ]
+  },
+  {
+    "make": "TVS",
+    "model": "Raider 125",
+    "category": "2W",
+    "body_type": "Commuter",
+    "variants": [
+      {
+        "name": "SmartXonnect Disc",
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "engine_capacity_cc": 124.8,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 2,
+          "mileage_kpl": 65.0,
+          "ev_range_km": null,
+          "ncap_rating": null,
+          "airbags_count": 0,
+          "abs_type": "Synchronized Braking Technology",
+          "ground_clearance_mm": 180.0,
+          "length_mm": 2070.0,
+          "width_mm": 785.0,
+          "height_mm": 1028.0,
+          "wheelbase_mm": 1326.0,
+          "boot_space_litres": null,
+          "extra_features": {
+            "color_tft_display": true,
+            "riding_modes_eco_power": true,
+            "under_seat_storage": true,
+            "usb_charger": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 99900.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 101500.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "Peppy 3-valve 125cc engine delivers crisp acceleration with quick throttle response. Switchable Eco and Power modes actually make a noticeable difference to fuel consumption.",
+        "source": "Autocar India",
+        "rating": 4.5
+      },
+      {
+        "topic": "comfort",
+        "content": "Gas-charged mono-shock suspension is segment-first in 125cc, providing plush ride quality that rivals higher segment 160cc motorcycles.",
+        "source": "BikeWale Long-Term",
+        "rating": 4.7
+      },
+      {
+        "topic": "reliability",
+        "content": "Silent electric starter generator and digital TFT console show high build quality without electronic hiccups.",
+        "source": "Team-BHP User Feedback",
+        "rating": 4.4
+      },
+      {
+        "topic": "service_cost",
+        "content": "Extremely pocket-friendly running costs. High mileage of 65 kmpl paired with ₹900 - ₹1,300 service bills make this ideal for college and office daily commuting.",
+        "source": "ZigWheels Commuter Guide",
+        "rating": 4.9
+      }
+    ]
+  },
+  {
+    "make": "Honda",
+    "model": "Activa 6G",
+    "category": "2W",
+    "body_type": "Scooter",
+    "variants": [
+      {
+        "name": "H-Smart Keyless Alloy",
+        "fuel_type": "Petrol",
+        "transmission": "Automatic",
+        "engine_capacity_cc": 109.51,
+        "motor_power_kw": null,
+        "battery_capacity_kwh": null,
+        "spec": {
+          "seating_capacity": 2,
+          "mileage_kpl": 55.0,
+          "ev_range_km": null,
+          "ncap_rating": null,
+          "airbags_count": 0,
+          "abs_type": "Combi-Brake System with Equalizer",
+          "ground_clearance_mm": 162.0,
+          "length_mm": 1833.0,
+          "width_mm": 697.0,
+          "height_mm": 1156.0,
+          "wheelbase_mm": 1260.0,
+          "boot_space_litres": 18.0,
+          "extra_features": {
+            "smart_keyless_ignition": true,
+            "external_fuel_filler_lid": true,
+            "telescopic_front_suspension": true,
+            "all_metal_body": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 82500.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 84000.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "The eSP 110cc engine is whisper-quiet on startup due to the ACG starter. Acceleration up to 60 km/h is linear, predictable, and stress-free for family errands.",
+        "source": "Overdrive Scooter Test",
+        "rating": 4.3
+      },
+      {
+        "topic": "comfort",
+        "content": "Telescopic front suspension glides over road ripples much better than older generation trailing link forks. External fuel cap prevents having to lift seat at petrol pumps.",
+        "source": "BikeWale Review",
+        "rating": 4.5
+      },
+      {
+        "topic": "reliability",
+        "content": "Unbeaten reliability champion of the Indian two-wheeler market. Heavy-duty metal bodywork withstands parking lot scrapes and tight city spaces without cracking.",
+        "source": "Team-BHP Long-Term Test",
+        "rating": 5.0
+      },
+      {
+        "topic": "service_cost",
+        "content": "Unbelievably low maintenance costs averaging ₹700 to ₹1,100 per service. Resale value in the second-hand scooter market is the highest in the country.",
+        "source": "CarDekho Ownership Survey",
+        "rating": 5.0
+      }
+    ]
+  },
+  {
+    "make": "Ather",
+    "model": "450X",
+    "category": "2W",
+    "body_type": "Electric Scooter",
+    "variants": [
+      {
+        "name": "Gen 3.7kWh Pro Pack",
+        "fuel_type": "EV",
+        "transmission": "Single-Speed",
+        "engine_capacity_cc": null,
+        "motor_power_kw": 6.4,
+        "battery_capacity_kwh": 3.7,
+        "spec": {
+          "seating_capacity": 2,
+          "mileage_kpl": null,
+          "ev_range_km": 150.0,
+          "ncap_rating": null,
+          "airbags_count": 0,
+          "abs_type": "Combined Braking with Regen",
+          "ground_clearance_mm": 170.0,
+          "length_mm": 1837.0,
+          "width_mm": 734.0,
+          "height_mm": 1114.0,
+          "wheelbase_mm": 1296.0,
+          "boot_space_litres": 22.0,
+          "extra_features": {
+            "7_inch_touchscreen_dashboard": true,
+            "google_maps_onboard": true,
+            "warp_mode": true,
+            "auto_hold_hill_assist": true,
+            "ather_grid_fast_charging": true
+          }
+        },
+        "prices": [
+          {"state_code": "DL", "ex_showroom_price": 149900.0, "effective_date": "2026-01-01"},
+          {"state_code": "MH", "ex_showroom_price": 152000.0, "effective_date": "2026-01-01"},
+          {"state_code": "KA", "ex_showroom_price": 154500.0, "effective_date": "2026-01-01"}
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "topic": "performance",
+        "content": "Warp mode delivers adrenaline-fueled 0-40 km/h acceleration in 3.3 seconds, leaving almost all petrol scooters behind at traffic signals. Aluminum chassis provides razor-sharp handling.",
+        "source": "Autocar India EV Test",
+        "rating": 4.9
+      },
+      {
+        "topic": "comfort",
+        "content": "Low center of gravity with battery placed on the floorboard gives exceptional high-speed balance. 7-inch touchscreen with embedded Google Maps makes urban navigation seamless.",
+        "source": "ZigWheels EV Review",
+        "rating": 4.6
+      },
+      {
+        "topic": "reliability",
+        "content": "IP67 rated battery and motor casing have proven robust across waterlogged monsoon streets in Bengaluru and Chennai. Ather Grid fast charging network is reliable and expanding.",
+        "source": "Team-BHP EV Long-Term",
+        "rating": 4.7
+      },
+      {
+        "topic": "service_cost",
+        "content": "Home charging cost is less than 30 paise per km. Minimal moving parts mean service is limited to periodic belt tension adjustments and brake fluid checks under ₹1,500/year.",
+        "source": "BikeWale Cost Calculator",
+        "rating": 4.8
+      }
+    ]
+  }
+]
