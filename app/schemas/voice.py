@@ -24,6 +24,14 @@ class VoiceTextRequest(BaseModel):
     language: Literal["en", "ml"] = "en"
 
 
+class ToolExecutionTrace(BaseModel):
+    tool_name: str
+    status: str = "success"
+    input_parameters: Dict[str, Any] = Field(default_factory=dict)
+    output_summary: str
+    latency_ms: float = 24.5
+
+
 class VoiceTextResponse(BaseModel):
     session_id: str
     user_text: str
@@ -32,3 +40,15 @@ class VoiceTextResponse(BaseModel):
     language: str
     recommended_vehicles: Optional[List[Dict[str, Any]]] = None
     state: str = "idle"
+    tool_executed: Optional[ToolExecutionTrace] = None
+    session_memory: Optional[Dict[str, Any]] = None
+
+
+class FeedbackCreate(BaseModel):
+    session_id: Optional[str] = None
+    query: str
+    response_text: str
+    rating: Literal["positive", "negative"]
+    category: Optional[str] = "accuracy"
+    notes: Optional[str] = None
+    language: str = "en"
