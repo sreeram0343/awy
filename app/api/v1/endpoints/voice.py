@@ -3,7 +3,14 @@ import base64
 import asyncio
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect, HTTPException, status
 from app.schemas.health import APIEnvelope
-from app.schemas.voice import VoiceSessionCreate, VoiceSessionResponse, VoiceTextRequest, VoiceTextResponse
+from app.schemas.voice import (
+    VoiceSessionCreate,
+    VoiceSessionResponse,
+    VoiceTextRequest,
+    VoiceTextResponse,
+    FeedbackCreate,
+    ToolExecutionTrace
+)
 from app.services.voice_service import voice_service
 from app.core.logging import logger
 
@@ -32,16 +39,21 @@ async def create_voice_session(payload: VoiceSessionCreate):
 @router.post("/text", response_model=APIEnvelope[VoiceTextResponse])
 async def text_query_fallback(payload: VoiceTextRequest):
     """
-    Typed fallback endpoint that returns answer, vehicle recommendations, and audio synthesis.
+    Typed fallback endpoint that returns answer, vehicle recommendations, tool traces, and audio synthesis.
     """
-    response_text, recommended_vehicles = await voice_service.process_user_intent(
+    response_text, recommended_vehicles, tool_trace, memory = await voice_service.process_user_intent(
         text=payload.text,
-        language=payload.language
+        language=payload.language,
+        session_id=payload.session_id
     )
     
     # Synthesize audio for the response
     wav_bytes = voice_service.generate_speech_wav(response_text)
     audio_b64 = base64.b64encode(wav_bytes).decode("ascii")
+
+    tool_exec_obj = None
+    if tool_trace:
+        tool_exec_obj = ToolExecutionTrace(**tool_trace)
 
     res = VoiceTextResponse(
         session_id=payload.session_id,
@@ -50,9 +62,38 @@ async def text_query_fallback(payload: VoiceTextRequest):
         audio_base64=audio_b64,
         language=payload.language,
         recommended_vehicles=recommended_vehicles,
-        state="idle"
+        state="idle",
+        tool_executed=tool_exec_obj,
+        session_memory=memory
     )
     return APIEnvelope[VoiceTextResponse](data=res)
+
+
+@router.post("/feedback", response_model=APIEnvelope[dict])
+async def record_feedback(payload: FeedbackCreate):
+    """
+    Records customer evaluation feedback (thumbs up/down, reasons) for self-improving agent performance.
+    """
+    saved_record = voice_service.add_feedback(payload.model_dump())
+    return APIEnvelope[dict](data=saved_record)
+
+
+@router.get("/evaluation", response_model=APIEnvelope[dict])
+async def get_agent_evaluation():
+    """
+    Returns real-time agent evaluation metrics, benchmark scores, CSAT, and guardrails.
+    """
+    metrics = voice_service.get_evaluation_metrics()
+    return APIEnvelope[dict](data=metrics)
+
+
+@router.post("/evaluate-benchmark", response_model=APIEnvelope[dict])
+async def run_benchmark_evaluation():
+    """
+    Executes automated synthetic evaluation suite comparing intent accuracy, latency, and tool invocations.
+    """
+    results = voice_service.run_benchmark_suite()
+    return APIEnvelope[dict](data=results)
 
 
 @router.websocket("/stream/{session_id}")
@@ -72,7 +113,8 @@ async def voice_websocket_stream(websocket: WebSocket, session_id: str):
         await websocket.send_json({
             "type": "state_change",
             "state": "listening",
-            "language": session.language
+            "language": session.language,
+            "session_id": session.session_id
         })
 
         while True:
@@ -115,11 +157,25 @@ async def voice_websocket_stream(websocket: WebSocket, session_id: str):
                     "text": user_text
                 })
 
-                # Process automotive reasoning
-                response_text, vehicles = await voice_service.process_user_intent(user_text, language=lang)
+                # Process automotive reasoning with tool execution & memory
+                response_text, vehicles, tool_trace, memory = await voice_service.process_user_intent(
+                    user_text, language=lang, session_id=session.session_id
+                )
 
                 if session.is_interrupted:
                     continue
+
+                if tool_trace:
+                    await websocket.send_json({
+                        "type": "tool_executed",
+                        "tool": tool_trace
+                    })
+
+                if memory:
+                    await websocket.send_json({
+                        "type": "memory_updated",
+                        "memory": memory
+                    })
 
                 session.state = "speaking"
                 await websocket.send_json({
@@ -154,9 +210,7 @@ async def voice_websocket_stream(websocket: WebSocket, session_id: str):
                 })
 
             elif msg_type == "audio_chunk":
-                # Received streaming audio from microphone
                 session.state = "listening"
-                # If end-of-speech or turn boundary triggered by client VAD
                 if data.get("is_final", False):
                     client_transcript = data.get("transcript", "")
                     lang = data.get("language", session.language)
@@ -174,7 +228,21 @@ async def voice_websocket_stream(websocket: WebSocket, session_id: str):
                         "text": client_transcript
                     })
 
-                    response_text, vehicles = await voice_service.process_user_intent(client_transcript, language=lang)
+                    response_text, vehicles, tool_trace, memory = await voice_service.process_user_intent(
+                        client_transcript, language=lang, session_id=session.session_id
+                    )
+
+                    if tool_trace:
+                        await websocket.send_json({
+                            "type": "tool_executed",
+                            "tool": tool_trace
+                        })
+
+                    if memory:
+                        await websocket.send_json({
+                            "type": "memory_updated",
+                            "memory": memory
+                        })
 
                     session.state = "speaking"
                     await websocket.send_json({
